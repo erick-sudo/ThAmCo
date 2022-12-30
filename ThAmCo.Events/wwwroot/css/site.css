@@ -1,0 +1,52 @@
+html {
+    font-size: 14px;
+    background: url("/gallerry/hall-828549.jpg") rgba(226, 139, 204, 0.59) center center no-repeat;
+    background-size: cover;
+}
+
+html * {
+    background-color: inherit;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: rgb(222, 232, 199, 0.94) center center no-repeat;
+}
+
+td {
+    font-weight: bolder;
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: darkslategrey;
+    }
+
+tbody tr:nth-child(even) {
+    background: inherit;
+}
+
+tbody tr:nth-child(odd) {
+    color: rgb(222, 232, 199);
+    background-color: rgb(17, 12, 12);
+}
+
+#main {
+    padding: 5px;
+    box-shadow: 0.07em 0.07em 1.0em black;
+}

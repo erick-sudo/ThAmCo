@@ -1,0 +1,33 @@
+﻿@model IEnumerable<ThAmCo.Events.Models.Staffing>
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>Staff</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EventId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StaffId)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EventId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StaffId)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
